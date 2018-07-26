@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+  - "node"
+env: 
+  - NODE_PATH=src/
+script:
+  - yarn test
+  - yarn build
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  local-dir: './build'
+  on:
+    branch: master

@@ -1,0 +1,3 @@
+** SET ENV VARIABLES **
+- Create .env file
+- Add NODE_PATH=src/
