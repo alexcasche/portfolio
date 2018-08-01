@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 import Box from './Box'
+import Content from './Content'
 import Header from './Header'
 import Title from './Title'
 
@@ -13,14 +14,20 @@ const Grid = styled.div`
   width: 100%;
   max-width: 1000px;
   margin: auto;
-  border: 1px solid #EEEEEE;
   background-color: white;
   box-shadow: 0px 0px 2px rgba(0,0,0,.05);
   & > div {
-    flex-basis: calc(100% / 3);
+    flex-basis: calc(50%);
+  }
+  @media only screen and (max-width: 640px) {
+    flex-wrap: wrap;
+    & > div {
+      flex-basis: 100%;
+    }
   }
 `
 Grid.Box = Box
+Grid.Content = Content
 Grid.Header = Header
 Grid.Title = Title
 

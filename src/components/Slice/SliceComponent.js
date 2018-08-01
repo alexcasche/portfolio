@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { PropTypes as t } from 'prop-types'
 import { Slice } from 'blocks'
-import { isAnimated } from './setModifiers'
+import { setBoolModifiers } from 'utils/setModifiers'
 
 export default class SliceComponent extends Component {
   constructor() {
@@ -14,14 +14,15 @@ export default class SliceComponent extends Component {
     setTimeout(() => this.setState({ animated: true}))
   }
   render() {
+    const animatedModifier = setBoolModifiers({animated: this.state.animated})
     return (
       <Slice>
-        <Slice.Side {...this.props} modifiers={['left', isAnimated(this.state.animated)]}>
+        <Slice.Side {...this.props} modifiers={['left', ...animatedModifier]}>
           <div>
             {this.props.sliceContentLeft}
           </div>
         </Slice.Side>
-        <Slice.Side {...this.props} modifiers={['right', isAnimated(this.state.animated)]}>
+        <Slice.Side {...this.props} modifiers={['right', ...animatedModifier]}>
           <div>
             {this.props.sliceContentRight}
           </div>

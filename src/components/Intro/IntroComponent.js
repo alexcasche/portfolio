@@ -2,11 +2,11 @@ import React, { Component } from 'react'
 // import { PropTypes as t } from 'prop-types'
 import { Slice } from 'components'
 import { Intro } from 'blocks'
-import { isAnimated } from './setModifiers'
-import logo from 'assets/logo.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedinIn, faMediumM } from '@fortawesome/free-brands-svg-icons'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import { setBoolModifiers } from 'utils/setModifiers'
+import logo from 'assets/logo.svg'
 
 class IntroComponent extends Component {
   constructor() {
@@ -19,16 +19,17 @@ class IntroComponent extends Component {
     setTimeout(() => this.setState({ animated: true}))
   }
   render() {
+    const animatedModifier = setBoolModifiers({animated: this.state.animated})
     const options = {
-      sliceContentLeft: <Intro.Stripes modifiers={['left', isAnimated(this.state.animated)]} />,
-      sliceContentRight: <Intro.Stripes modifiers={['right', isAnimated(this.state.animated)]} />,
+      sliceContentLeft: <Intro.Stripes modifiers={['left', ...animatedModifier]} />,
+      sliceContentRight: <Intro.Stripes modifiers={['right', ...animatedModifier]} />,
       transitionDelay: '.5s',
       transitionDuration: '.75s'
     }
     return (
       <Intro>
         <Slice {...options} />
-        <Intro.Content modifiers={[isAnimated(this.state.animated)]}>
+        <Intro.Content modifiers={animatedModifier}>
           <Intro.Logo src={logo} />
           <Intro.Title>
             Alex Asche
@@ -48,7 +49,7 @@ class IntroComponent extends Component {
             </Intro.Social>
           </div>
         </Intro.Content>
-        <Intro.Button modifiers={[isAnimated(this.state.animated)]}>
+        <Intro.Button modifiers={animatedModifier}>
           <FontAwesomeIcon icon={faChevronDown} />
         </Intro.Button>
       </Intro>

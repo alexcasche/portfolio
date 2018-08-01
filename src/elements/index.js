@@ -1,1 +1,6 @@
 export { default as Button, ButtonLink } from './Button/Button'
+export { default as P } from './P/P'
+export { default as H1 } from './H1/H1'
+export { default as H2 } from './H2/H2'
+export { default as H3 } from './H3/H3'
+export { default as Section } from './Section/Section'

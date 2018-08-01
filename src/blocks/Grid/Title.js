@@ -1,14 +1,7 @@
-import styled from 'styled-components'
+import { H2 } from 'elements'
 
-const Title = styled.h2`
-  color: ${props => props.theme.colors.lighterBlue};
-  font-family: ${props => props.theme.fonts.serif};
-  font-size: 19px;
-  text-transform: uppercase;
-  margin: 0;
+const Title = H2.extend`
   padding: 10px;
-  border-left: 1px solid #EEEEEE;
-  border-right: 1px solid #EEEEEE;
   border-bottom: 1px solid #EEEEEE;
 `
 

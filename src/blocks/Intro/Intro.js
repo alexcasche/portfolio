@@ -8,14 +8,16 @@ import Stripes from './Stripes'
 import Tagline from './Tagline'
 import Title from './Title'
 
-const Intro = styled.div`
+const Intro = styled.section`
   position: relative;
   height: 100vh;
+  min-height: 500px;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 `
 
 Intro.Button = Button
