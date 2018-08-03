@@ -1,17 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Provider } from 'react-redux'
-import store from './store'
 import { ThemeProvider } from 'styled-components'
 import theme from 'constants/theme'
 import 'constants/globalStyles'
-import { App } from 'components'
+import App from './App'
 
 ReactDOM.render(
-  <Provider store={store}>
-    <ThemeProvider theme={theme}>
-      <App />
-    </ThemeProvider>
-  </Provider>,
+  <ThemeProvider theme={theme}>
+    <App />
+  </ThemeProvider>,
   document.getElementById('app-root')
 )
