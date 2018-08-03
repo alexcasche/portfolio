@@ -37,7 +37,8 @@ const MODIFIERS = {
 
 const Stripes = styled.div`
   width: 120px;
-  height: 100vh;
+  height: 100%;
+  min-height: 350px;
   position: absolute;
   top: 0;
   transition: transform .5s ease-in-out .75s;

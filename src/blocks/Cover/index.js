@@ -10,14 +10,16 @@ import Scroll from './Scroll'
 
 const Cover = styled.section`
   position: relative;
-  height: 100vh;
-  min-height: 500px;
+  min-height: 375px;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
   background-color: ${props => props.theme.colors.darkerBlue};
   padding-bottom: 40px;
+  ${props => props.theme.breaks.medium} {
+    min-height: 500px;
+  }
 `
 
 Cover.Slice = Slice

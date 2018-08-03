@@ -9,22 +9,31 @@ export default class Intro extends Component {
   constructor() {
     super()
     this.state = {
-      animated: null
+      animated: null,
+      viewportHeight: ''
     }
   }
   componentDidMount() {
-    setTimeout(() => this.setState({ animated: 'animated' }))
+    setTimeout(() => this.setState({ 
+      animated: 'animated',
+      viewportHeight: window.innerHeight
+    }))
+    window.addEventListener("resize", this.resizeViewport);
   }
   scrollTo = () => {
-    window.scroll({top: window.innerHeight, left: 0, behavior: 'smooth' });
+    window.scroll({top: this.state.viewportHeight, left: 0, behavior: 'smooth' });
+  }
+  resizeViewport = () => {
+    this.setState({ viewportHeight: window.innerHeight })
   }
   render() {
+
     return (
-      <Cover modifiers={['dark', this.state.animated]}>
+      <Cover modifiers={['dark', this.state.animated]} style={{height: this.state.viewportHeight}}>
         <Cover.Slice modifiers={['left', this.state.animated]} />
         <Cover.Slice modifiers={['right', this.state.animated]} />
-        <Cover.Stripes modifiers={['left', this.state.animated]} />
-        <Cover.Stripes modifiers={['right', this.state.animated]} />
+        <Cover.Stripes modifiers={['left', this.state.animated]}/>
+        <Cover.Stripes modifiers={['right', this.state.animated]}/>
         <Cover.Content modifiers={[this.state.animated]}>
           <Cover.Logo src={logo} />
           <Cover.Title>Alex Asche</Cover.Title>

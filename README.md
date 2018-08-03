@@ -1,8 +1,8 @@
 # Portfolio
 
-Personal portfolio site.
+Personal portfolio site built with React + Styled-Components.
 
-![Build Status][Travis-shield] ![JavaScript Style Guide][Prettier-shield] ![Packagist][MIT-shield]
+![Build Status][Travis-shield] ![JavaScript Style Guide][Prettier-shield]
 
 
 
