@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="890 248.108 133.759 87.82">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-3 {
+        fill: #ededed;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.001" y1="0.501" x2="1" y2="0.501" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#60c5e7"/>
+      <stop offset="1" stop-color="#3cb2d9"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="-0.001" y1="0.5" x2="0.999" y2="0.5" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="Logo" transform="translate(890 248.108)">
+    <g id="Group_4" data-name="Group 4" transform="translate(34.829)">
+      <path id="Path_5" data-name="Path 5" class="cls-1" d="M86.358,71.564H61.572L41.7,35.881,53.879,14.3Z" transform="translate(12.573 16.255)"/>
+      <path id="Path_6" data-name="Path 6" class="cls-2" d="M65.231,0,77.838,21.367,40.659,87.82H16.3Z" transform="translate(-16.3)"/>
+    </g>
+    <g id="Group_5" data-name="Group 5">
+      <path id="Path_7" data-name="Path 7" class="cls-3" d="M32.3,55.2,47.257,28.7,62.214,55.2" transform="translate(36.716 32.624)"/>
+      <path id="Path_8" data-name="Path 8" class="cls-3" d="M48.931,0,61.538,21.367,24.359,87.82H0Z"/>
+    </g>
+  </g>
+</svg>
