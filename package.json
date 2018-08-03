@@ -4,7 +4,7 @@
   "description": "Asche.io portoflio site.",
   "author": "alexcasche",
   "license": "MIT",
-  "homepage": "https://alexcasche.github.io",
+  "homepage": "https:asche.io",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.0-14",
     "@fortawesome/free-brands-svg-icons": "^5.2.0",
