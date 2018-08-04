@@ -4,7 +4,7 @@ const P = styled.p`
   width: 100%;
   max-width: 700px;
   margin: auto;
-  color: ${props => props.theme.colors.baseBlue};
+  color: ${props => props.theme.colors.darkBlue};
   font-family: ${props => props.theme.fonts.sans};
   font-size: 1rem;
   font-weight: 400;

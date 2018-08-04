@@ -1,5 +1,5 @@
 import React from 'react'
-import { Intro, About, Skills, Projects } from 'sections'
+import { Intro, About, Skills, Projects, Footer } from 'sections'
 
 const styles = {
   position: 'relative',
@@ -14,6 +14,7 @@ const App = () => {
       <About />
       <Skills />
       <Projects />
+      <Footer />
     </div>
   )
 }

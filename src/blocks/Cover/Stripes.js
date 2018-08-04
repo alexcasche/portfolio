@@ -10,8 +10,8 @@ const MODIFIERS = {
         to right,
         ${theme.colors.baseBlue},
         ${theme.colors.baseBlue} 20px,
-        ${theme.colors.lightBlue} 20px,
-        ${theme.colors.lightBlue} 40px
+        ${theme.colors.darkBlue} 20px,
+        ${theme.colors.darkBlue} 40px
       );
       transform: rotate(45deg) translate(-100%, -30%);
     }
@@ -22,10 +22,10 @@ const MODIFIERS = {
     &::before {
       background: repeating-linear-gradient(
         to left,
-        ${theme.colors.baseBlue},
+        ${theme.colors.darkBlue},
+        ${theme.colors.darkBlue} 20px,
         ${theme.colors.baseBlue} 20px,
-        ${theme.colors.lightBlue} 20px,
-        ${theme.colors.lightBlue} 40px
+        ${theme.colors.baseBlue} 40px
       );
       transform: rotate(225deg) translate(-100%, -30%);
     }

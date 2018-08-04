@@ -5,7 +5,7 @@ const MODIFIERS = {
   left: ({ theme }) => `
     left: 0;
     transform: translateX(-200%) skew(-30deg);
-    background-color: ${theme.colors.lightBlue};
+    background-color: ${theme.colors.baseBlue};
     &::before {
       transform: translateX(-99%);
     }
@@ -13,7 +13,7 @@ const MODIFIERS = {
   right: ({ theme }) => `
     left: 50%;
     transform: translateX(200%) skew(-30deg);
-    background-color: ${theme.colors.baseBlue};
+    background-color: ${theme.colors.darkBlue};
     &::before {
       transform: translateX(49%);
     }

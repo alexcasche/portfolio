@@ -13,7 +13,7 @@ const MODIFIERS = {
       content: '';
       display: block;
       height: 100%;
-      width: 100%;
+      width: 200%;
     }
     &::before {
       background-color: ${theme.colors.baseBlue};

@@ -26,7 +26,7 @@ const Caption = styled.figcaption`
     border: 2px solid ${props => props.theme.colors.lighterBlue};
     color: ${props => props.theme.colors.white};
     font-family: ${props => props.theme.fonts.serif};
-    font-size: 13px;
+    font-size: 14px;
     font-weight: bold;
     background-color: transparent;
     display: inline-block;

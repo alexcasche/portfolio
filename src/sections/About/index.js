@@ -7,7 +7,7 @@ const About = () => {
       <Wrapper>
         <Heading>Hi I'm Alex. Thanks for stopping by.</Heading>
         <Paragraph>
-          Ever since I was a little kid, I've had an urge to create things. If I could imagine it, chances are I tried to build it. Fast forward 15 years and I'm still driven by that same urge.  When I became a designer and developer, I found an outlet to be innovative, curious, and bold. Now instead of lego cities and tree forts, I build startups and applications.
+          Ever since I was a little kid, I've had this urge to create things. Whenever I imagined something, I would try to build it. Fast forward 15 years and I'm still driven by the same urge.  I became a designer and developer, because it gave me an outlet to be creative, innovative and bold. Now instead of lego cities and tree forts, I build startups and applications.
         </Paragraph>
       </Wrapper>
     </Section>

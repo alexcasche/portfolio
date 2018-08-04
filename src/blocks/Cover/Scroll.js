@@ -19,7 +19,10 @@ const Scroll = Button.extend`
   font-size: 1em;
   box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.15);
   opacity: 0;
-  transition: opacity .35s ease-in-out 1s;
+  transition: opacity .35s ease-in-out 1s, background-color .15s ease-in-out;
+  &:hover {
+    background-color: #3490b0;
+  }
   ${applyStyleModifiers(MODIFIERS)};
 `
 

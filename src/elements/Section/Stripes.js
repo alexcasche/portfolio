@@ -21,8 +21,8 @@ const Stripes = styled.div`
     left: -50px;
     background: repeating-linear-gradient(
       to right,
-      ${props=> props.theme.colors.lightBlue},
-      ${props=> props.theme.colors.lightBlue} 20px,
+      ${props=> props.theme.colors.darkBlue},
+      ${props=> props.theme.colors.darkBlue} 20px,
       ${props=> props.theme.colors.baseBlue} 20px,
       ${props=> props.theme.colors.baseBlue} 40px
     );
@@ -35,8 +35,8 @@ const Stripes = styled.div`
       to left,
       ${props=> props.theme.colors.darkBlue},
       ${props=> props.theme.colors.darkBlue} 20px,
-      ${props=> props.theme.colors.lightBlue} 20px,
-      ${props=> props.theme.colors.lightBlue} 40px
+      ${props=> props.theme.colors.baseBlue} 20px,
+      ${props=> props.theme.colors.baseBlue} 40px
     );
     transform: rotate(225deg);
   }
