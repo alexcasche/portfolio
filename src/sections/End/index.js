@@ -1,16 +1,32 @@
 import React from 'react'
-import { Section, Wrapper, Heading, Paragraph } from 'elements'
+import { Wrapper, Icon } from 'elements'
+import { Footer } from 'blocks'
+import logo from 'assets/logo.svg'
+import { faHeart, faCoffee, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 
 const End = () => {
   return (
-    <Section modifiers={['dark']}>
+    <Footer modifiers={['dark']}>
+      <Footer.Stripes />
       <Wrapper>
-        <Heading>Hi I'm Alex. Thanks for stopping by.</Heading>
-        <Paragraph>
-          Ever since I was a little kid, I've had an urge to create things. If I could imagine it, chances are I tried to build it. Fast forward 15 years and I'm still driven by that same urge.  When I became a designer and developer, I found an outlet to be innovative, curious, and bold. Now instead of lego cities and tree forts, I build startups and applications.
-        </Paragraph>
+        <Footer.Logo src={logo}/>
+        <div>
+          <Footer.Social href="https://github.com/alexcasche">
+            <Icon icon={faGithub} />
+          </Footer.Social>
+          <Footer.Social href="https://linkedin.com/in/alexcasche">
+            <Icon icon={faLinkedinIn} />
+          </Footer.Social>
+          <Footer.Social href="mailto:alexcasche@gmail.com">
+            <Icon icon={faEnvelope} />
+          </Footer.Social>
+        </div>
+        <Footer.Text>
+          Built with <Icon icon={faHeart} /> + <Icon icon={faCoffee} /> 
+        </Footer.Text>
       </Wrapper>
-    </Section>
+    </Footer>
   )
 }
 

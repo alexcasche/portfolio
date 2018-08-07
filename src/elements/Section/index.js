@@ -14,10 +14,11 @@ const MODIFIERS = {
       display: block;
       height: 100%;
       width: 200%;
+      -webkit-backface-visibility: hidden;
     }
     &::before {
       background-color: ${theme.colors.baseBlue};
-      transform: translateX(-100%) skew(-30deg);
+      transform: translate3d(-100%, 0, 0) skew(-30deg);
     }
     &::after {
       background-color: ${theme.colors.darkBlue};

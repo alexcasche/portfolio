@@ -15,6 +15,7 @@ const Stripes = styled.div`
     width: 120px;
     height: 500px;
     z-index: 1;
+    -webkit-backface-visibility: hidden;
   }
   &::before {
     top: -100px;
@@ -26,6 +27,7 @@ const Stripes = styled.div`
       ${props=> props.theme.colors.baseBlue} 20px,
       ${props=> props.theme.colors.baseBlue} 40px
     );
+    background-color: ${props=> props.theme.colors.baseBlue};
     transform: rotate(45deg);
   }
   &::after {
@@ -38,6 +40,7 @@ const Stripes = styled.div`
       ${props=> props.theme.colors.baseBlue} 20px,
       ${props=> props.theme.colors.baseBlue} 40px
     );
+    background-color: ${props=> props.theme.colors.darkBlue};
     transform: rotate(225deg);
   }
 `
